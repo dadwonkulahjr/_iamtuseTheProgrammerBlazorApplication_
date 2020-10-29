@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tBecD/YLqvyW0Jc+FWdSYBDjUwsKE93DZMcXT3PTObAHPCPldTJAur1TptMMWKXuMNfZYfbErdzKX/fpVblstQ==",
+  "dgSpecHash": "pEuXc7dCVo5VtQ+wk472g4qRwqbFkJGMIofxjRh7+jvvuEbMysAId4sWIv/OjkIqFlPBB7b+CMG5eOU+A/BIlg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

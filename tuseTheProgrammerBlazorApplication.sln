@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tuseTheProgrammerBlazor.Models", "tuseTheProgrammerBlazor.Models\tuseTheProgrammerBlazor.Models.csproj", "{D27599D7-0DD6-4BCD-9D08-00A0738ACA8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tuseTheProgrammerBlazor.Models", "tuseTheProgrammerBlazor.Models\tuseTheProgrammerBlazor.Models.csproj", "{D27599D7-0DD6-4BCD-9D08-00A0738ACA8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tuseTheProgrammerBlazorApplication", "tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication.csproj", "{F348CD8D-0746-48BA-90D1-36BD737BB9A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tuseTheProgrammerBlazorApplication", "tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication.csproj", "{F348CD8D-0746-48BA-90D1-36BD737BB9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tuseTheProgrammer.Api", "tuseTheProgrammer.Api\tuseTheProgrammer.Api.csproj", "{D70DE66D-5172-4389-9791-0D772698A851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F348CD8D-0746-48BA-90D1-36BD737BB9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F348CD8D-0746-48BA-90D1-36BD737BB9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F348CD8D-0746-48BA-90D1-36BD737BB9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70DE66D-5172-4389-9791-0D772698A851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70DE66D-5172-4389-9791-0D772698A851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70DE66D-5172-4389-9791-0D772698A851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70DE66D-5172-4389-9791-0D772698A851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

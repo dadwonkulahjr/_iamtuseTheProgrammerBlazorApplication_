@@ -10,10 +10,9 @@ namespace tuseTheProgrammerBlazorApplication.Pages
     public class EmployeeListBase : ComponentBase
     {
         public IEnumerable<Employee> Employees { get; set; }
-        protected override Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
-            LoadAllEmployees();
-            return base.OnInitializedAsync();
+            await Task.Run(LoadAllEmployees);
         }
         private void LoadAllEmployees()
         {
@@ -24,7 +23,7 @@ namespace tuseTheProgrammerBlazorApplication.Pages
                 LastName = "James",
                 Email = "david@tuseTheProgrammer.com",
                 BirthDate = new DateTime(1980, 12, 10),
-                Department = new Department() { DepartmentId = 1, DepartmentName = "IT" },
+                DepartmentId = 1,
                 Gender = Gender.Male,
                 PhotoPath = "images/david.png"
             };
@@ -36,7 +35,7 @@ namespace tuseTheProgrammerBlazorApplication.Pages
                 LastName = "Peters",
                 Email = "sara@tuseTheProgrammer.com",
                 BirthDate = new DateTime(1990, 10, 05),
-                Department = new Department() { DepartmentId = 2, DepartmentName = "HR" },
+                DepartmentId = 2,
                 Gender = Gender.Female,
                 PhotoPath = "images/sara.png"
             };
@@ -48,7 +47,7 @@ namespace tuseTheProgrammerBlazorApplication.Pages
                 LastName = "Holland",
                 Email = "freya@tuseTheProgrammer.com",
                 BirthDate = new DateTime(1996, 05, 11),
-                Department = new Department() { DepartmentId = 3, DepartmentName = "MGT" },
+                DepartmentId = 1,
                 Gender = Gender.Female,
                 PhotoPath = "images/freya.png"
             };
@@ -60,7 +59,7 @@ namespace tuseTheProgrammerBlazorApplication.Pages
                 LastName = "Solo",
                 Email = "price@tuseTheProgrammer.com",
                 BirthDate = new DateTime(1985, 08, 10),
-                Department = new Department() { DepartmentId = 4, DepartmentName = "IT" },
+                DepartmentId = 3,
                 Gender = Gender.Male,
                 PhotoPath = "images/car.jpg"
             };

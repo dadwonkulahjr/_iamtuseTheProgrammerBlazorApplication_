@@ -4,6 +4,6 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuse
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazor.Models\obj\Debug\netstandard2.0\tuseTheProgrammerBlazor.Models.csprojAssemblyReference.cache
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazor.Models\obj\Debug\netstandard2.0\tuseTheProgrammerBlazor.Models.AssemblyInfoInputs.cache
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazor.Models\obj\Debug\netstandard2.0\tuseTheProgrammerBlazor.Models.AssemblyInfo.cs
-C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazor.Models\obj\Debug\netstandard2.0\tuseTheProgrammerBlazor.Models.csproj.CoreCompileInputs.cache
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazor.Models\obj\Debug\netstandard2.0\tuseTheProgrammerBlazor.Models.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazor.Models\obj\Debug\netstandard2.0\tuseTheProgrammerBlazor.Models.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazor.Models\obj\Debug\netstandard2.0\tuseTheProgrammerBlazor.Models.csproj.CoreCompileInputs.cache
