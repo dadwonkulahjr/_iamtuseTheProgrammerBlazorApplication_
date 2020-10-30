@@ -381,6 +381,8 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuse
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\tuseTheProgrammerBlazorApplication.csproj.CoreCompileInputs.cache
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\tuseTheProgrammerBlazorApplication.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\tuseTheProgrammerBlazorApplication.MvcApplicationPartsAssemblyInfo.cache

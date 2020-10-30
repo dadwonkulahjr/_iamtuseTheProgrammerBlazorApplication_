@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "H8VHW1+3xXfSQE8lGHsIvXe0y4SYRZIuxOCZKRxxYmD25iyY39uJe/ej8RkxQrTxaG78RKYeHBi0Zw1SewehdA==",
+  "dgSpecHash": "ABFXiwSq0sxPQS+tCwXJKWBUDeHpcRh3TVUQEuvEie3PSWOI1g2s031Iy+7YhvDPUhaWjYjQ5/AdWdE9FdwIRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazorApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview3.20168.3\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.9\\microsoft.aspnetcore.cryptography.internal.3.1.9.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.9\\microsoft.aspnetcore.cryptography.keyderivation.3.1.9.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.9\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.9.nupkg.sha512",

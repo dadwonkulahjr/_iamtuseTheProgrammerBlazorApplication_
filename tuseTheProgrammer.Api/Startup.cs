@@ -33,6 +33,7 @@ namespace tuseTheProgrammer.Api
             });
             services.AddScoped<IEmployeeRepository, EmployeeService>();
             services.AddScoped<IDepartmentRepository, DepartmentService>();
+         
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
