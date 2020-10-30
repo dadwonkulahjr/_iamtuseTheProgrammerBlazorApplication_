@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,7 +22,7 @@ namespace tuseTheProgrammer.Api.Services
             return result.Entity;
         }
 
-        public async void Delete(int employeeId)
+        public async Task<Employee> Delete(int employeeId)
         {
             var employeeFound = await _dbContext.Employees.FirstOrDefaultAsync(e =>
             e.EmployeeId == employeeId);
@@ -31,7 +30,9 @@ namespace tuseTheProgrammer.Api.Services
             {
                 _dbContext.Employees.Remove(employeeFound);
                 await _dbContext.SaveChangesAsync();
+                return employeeFound;
             }
+            return null;
         }
 
         public async Task<Employee> GetEmployeeByEmail(string email)
@@ -47,6 +48,23 @@ namespace tuseTheProgrammer.Api.Services
         public async Task<IEnumerable<Employee>> GetEmployees()
         {
             return await _dbContext.Employees.ToListAsync();
+        }
+
+        public async Task<IEnumerable<Employee>> Search(string name, Gender? gender)
+        {
+            IQueryable<Employee> query = _dbContext.Employees;
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(e => e.FirstName.Contains(name) || e.LastName.Contains(name));
+            }
+
+            if(gender != null)
+            {
+                query = query.Where(g => g.Gender == gender);
+            }
+
+            return await query.ToListAsync();
         }
 
         public async Task<Employee> Update(Employee employee)

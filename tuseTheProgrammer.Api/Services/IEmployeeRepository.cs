@@ -12,8 +12,8 @@ namespace tuseTheProgrammer.Api.Services
         Task<Employee> Create(Employee employee);
         Task<Employee> Update(Employee employee);
         Task<Employee> GetEmployeeById(int employeeId);
-        void Delete(int employeeId);
-
+        Task<Employee> Delete(int employeeId);
+        Task<IEnumerable<Employee>> Search(string name, Gender? gender);
         Task<Employee> GetEmployeeByEmail(string email);
     }
 }

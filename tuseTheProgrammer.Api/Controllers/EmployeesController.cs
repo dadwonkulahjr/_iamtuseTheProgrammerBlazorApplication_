@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using tuseTheProgrammer.Api.Services;
 using tuseTheProgrammerBlazor.Models;
 
+
 namespace tuseTheProgrammer.Api.Controllers
 {
     [Route("api/[controller]")]
@@ -97,9 +98,9 @@ namespace tuseTheProgrammer.Api.Controllers
                     return BadRequest("Employee Id mismatch.");
                 }
                 var getUpdateEmployee = await _employeeRepository.GetEmployeeById(id);
-                if(getUpdateEmployee != null)
+                if (getUpdateEmployee != null)
                 {
-                    return await _employeeRepository.Update(employee);
+                    return Ok(await _employeeRepository.Update(employee));
                 }
                 else
                 {
@@ -109,9 +110,51 @@ namespace tuseTheProgrammer.Api.Controllers
             catch (Exception)
             {
 
-                throw;
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                     "There were error in updating the data from the database!");
             }
         }
 
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<Employee>> DeleteEmployee(int id)
+        {
+            try
+            {
+                var employeeToDelete = await _employeeRepository.GetEmployeeById(id);
+                if (employeeToDelete == null)
+                {
+                    return NotFound($"Employee with Id = {id} not found");
+                }
+
+                return Ok(await _employeeRepository.Delete(id));
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "There were error in deleting the data from the database!");
+
+            }
+        }
+
+        [HttpGet("{search}")]
+        public async Task<ActionResult<Employee>> Search(string name, Gender? gender)
+        {
+            try
+            {
+                var result = await _employeeRepository.Search(name, gender);
+                if (result.Any())
+                {
+                    return Ok(result);
+                }
+                return NotFound();
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                     "There were error in searching for the data from the database!");
+            }
+        }
     }
 }
