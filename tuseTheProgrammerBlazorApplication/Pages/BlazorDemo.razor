@@ -1,0 +1,32 @@
+﻿@page "/blazorDemo"
+@inherits BlazorDemoBase
+<h1>
+    Blazor Demo
+    <i class="oi oi-pencil"></i>
+</h1>
+<hr />
+<div>
+    <b class="col-md-2">Name:</b> @Name
+</div>
+<div>
+    <b class="col-md-2">Name:</b>
+    <div class="col-4"><input value="@Name" class="form-control" /></div>
+</div>
+<div>
+    <b>Title:</b>@(Gender == "Male" ? $"Mr.{Name}" : $"Mrs. {Name}")
+
+</div>
+<hr />
+<h3>
+    Two way Data binding..
+</h3>
+<div>
+    Name: @Name
+</div>
+
+@*<div>
+    Name: <input value="@Name" @onchange="@(e => Name = e.Value.ToString())"/>
+</div>*@
+<div>
+    Name: <input @bind="Name" @bind:event="oninput" />
+</div>

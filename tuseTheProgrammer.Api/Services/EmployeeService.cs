@@ -42,7 +42,9 @@ namespace tuseTheProgrammer.Api.Services
 
         public async Task<Employee> GetEmployeeById(int employeeId)
         {
-            return await _dbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == employeeId);
+            return await _dbContext.Employees
+                .Include(e => e.Department)
+                .FirstOrDefaultAsync(e => e.EmployeeId == employeeId);
         }
 
         public async Task<IEnumerable<Employee>> GetEmployees()

@@ -1,5 +1,9 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+.HideFooter{
+    display:none;
+}
+
 .imageThumbanail {
     width: auto;
     height: 200px;

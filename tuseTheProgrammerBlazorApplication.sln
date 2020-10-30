@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tuseTheProgrammerBlazor.Mod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tuseTheProgrammerBlazorApplication", "tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication.csproj", "{F348CD8D-0746-48BA-90D1-36BD737BB9A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tuseTheProgrammer.Api", "tuseTheProgrammer.Api\tuseTheProgrammer.Api.csproj", "{D70DE66D-5172-4389-9791-0D772698A851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tuseTheProgrammer.Api", "tuseTheProgrammer.Api\tuseTheProgrammer.Api.csproj", "{D70DE66D-5172-4389-9791-0D772698A851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
