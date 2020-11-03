@@ -1,0 +1,55 @@
+﻿@page "/editEmployee/{id}"
+@inherits EditEmployeeBase
+
+
+<EditForm Model="Employee">
+    <h2 class="display-4">
+        Edit Employee
+    </h2>
+    <hr />
+    <div class="row form-group">
+        <label for="firstName" class="col-md-2 col-form-label">
+            First Name
+        </label>
+        <div class="col-sm-10">
+            <InputText id="firstName" class="form-control" placeholder="First Name..."
+                       @bind-Value="Employee.FirstName" />
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <label for="lastName" class="col-md-2 col-form-label">
+            Last Name
+        </label>
+        <div class="col-sm-10">
+            <InputText id="lastName" class="form-control" placeholder="Last Name..."
+                       @bind-Value="Employee.LastName" />
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <label for="lastName" class="col-md-2 col-form-label">
+            Email
+        </label>
+        <div class="col-sm-10">
+            <InputText id="email" class="form-control" placeholder="Email..."
+                       @bind-Value="Employee.Email" />
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <label for="lastName" class="col-md-2 col-form-label">
+            Department
+        </label>
+        <div class="col-sm-10">
+           <InputSelect id="department" @bind-Value="DepartmentId" class="custom-select">
+               <option value="">Select department</option>
+               @foreach (var dept in Departments)
+               {
+                   <option value="@dept.DepartmentId">@dept.DepartmentName</option>
+               }
+           </InputSelect>
+        </div>
+    </div>
+
+</EditForm>

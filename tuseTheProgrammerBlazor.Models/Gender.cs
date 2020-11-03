@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace tuseTheProgrammerBlazor.Models
+﻿namespace tuseTheProgrammerBlazor.Models
 {
     public enum  Gender
     {

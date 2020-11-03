@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -97,7 +96,11 @@ namespace tuseTheProgrammer.Api.Controllers
                 {
                     return BadRequest("Employee Id mismatch.");
                 }
+
+
                 var getUpdateEmployee = await _employeeRepository.GetEmployeeById(id);
+
+
                 if (getUpdateEmployee != null)
                 {
                     return Ok(await _employeeRepository.Update(employee));

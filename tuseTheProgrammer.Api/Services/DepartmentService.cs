@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using tuseTheProgrammer.Api.Models;
 using tuseTheProgrammerBlazor.Models;
@@ -15,14 +14,14 @@ namespace tuseTheProgrammer.Api.Services
         {
             _appDbContext = appDbContext;
         }
-        public IEnumerable<Department> GetAllDepartments()
+        public async Task<IEnumerable<Department>> GetAllDepartments()
         {
-            return _appDbContext.Departments.ToList();
+            return await _appDbContext.Departments.ToListAsync();
         }
 
-        public Department GetDepartmentById(int departmentId)
+        public async Task<Department> GetDepartmentById(int departmentId)
         {
-            return _appDbContext.Departments.Find(departmentId);
+            return await _appDbContext.Departments.FindAsync(departmentId);
         }
     }
 }

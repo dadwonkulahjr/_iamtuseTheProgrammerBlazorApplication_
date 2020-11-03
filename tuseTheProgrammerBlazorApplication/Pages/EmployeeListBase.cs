@@ -14,9 +14,22 @@ namespace tuseTheProgrammerBlazorApplication.Pages
         [Inject]
         public IEmployeeService EmployeeService { get; set; }
         public IEnumerable<Employee> Employees { get; set; }
+        public bool ShowFooter { get; set; } = true;
+        protected int EmployeeTotalCount { get; set; } = 0;
         protected override async Task OnInitializedAsync()
         {
             Employees = await EmployeeService.GetEmployees();
+        }
+        protected void EmployeeSelectionChanged(bool isSelected)
+        {
+            if (isSelected)
+            {
+                EmployeeTotalCount++;
+            }
+            else
+            {
+                EmployeeTotalCount--;
+            }
         }
         private void LoadAllEmployees()
         {

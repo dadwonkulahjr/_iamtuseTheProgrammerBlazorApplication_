@@ -2,11 +2,11 @@
 using System.Threading.Tasks;
 using tuseTheProgrammerBlazor.Models;
 
-namespace tuseTheProgrammer.Api.Services
+namespace tuseTheProgrammerBlazorApplication.Services
 {
-    public interface IDepartmentRepository
+    public interface IDepartmentService
     {
-        Task<Department> GetDepartmentById(int departmentId);
         Task<IEnumerable<Department>> GetAllDepartments();
+        Task<Department> GetDepartmentById(int departmentId);
     }
 }
