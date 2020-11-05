@@ -15,6 +15,16 @@ namespace tuseTheProgrammerBlazorApplication.Services
             _httpClient = httpClient;
         }
 
+        public async Task<Employee> CreateEmployee(Employee newEmployee)
+        {
+            return await _httpClient.PostJsonAsync<Employee>("api/employees", newEmployee);
+        }
+
+        public async Task DeleteEmployee(int id)
+        {
+           await _httpClient.DeleteAsync($"api/employees/{id}");
+        }
+
         public async Task<Employee> GetEmployeeById(int id)
         {
             return await _httpClient.GetJsonAsync<Employee>($"api/employees/{id}");
@@ -23,6 +33,11 @@ namespace tuseTheProgrammerBlazorApplication.Services
         public async Task<IEnumerable<Employee>> GetEmployees()
         {
             return await _httpClient.GetJsonAsync<Employee[]>("api/employees");
+        }
+
+        public async Task<Employee> UpdateEmployee(Employee updatedEmployee)
+        {
+            return await _httpClient.PutJsonAsync<Employee>("api/employees", updatedEmployee);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace tuseTheProgrammer.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetAllEmployees()
+        public async Task<ActionResult<Employee>> GetAllEmployees()
         {
             try
             {
@@ -87,18 +87,13 @@ namespace tuseTheProgrammer.Api.Controllers
             }
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
+        [HttpPut()]
+        public async Task<ActionResult<Employee>> UpdateEmployee(Employee employee)
         {
             try
             {
-                if (id != employee.EmployeeId)
-                {
-                    return BadRequest("Employee Id mismatch.");
-                }
-
-
-                var getUpdateEmployee = await _employeeRepository.GetEmployeeById(id);
+               
+                var getUpdateEmployee = await _employeeRepository.GetEmployeeById(employee.EmployeeId);
 
 
                 if (getUpdateEmployee != null)
@@ -107,7 +102,7 @@ namespace tuseTheProgrammer.Api.Controllers
                 }
                 else
                 {
-                    return NotFound($"Employee with Id = {id} not found");
+                    return NotFound($"Employee with Id = {employee.EmployeeId} not found");
                 }
             }
             catch (Exception)

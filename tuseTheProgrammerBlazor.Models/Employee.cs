@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-
+using tuseTheProgrammerBlazor.Models.CustomValidator;
 
 namespace tuseTheProgrammerBlazor.Models
 {
@@ -12,11 +12,14 @@ namespace tuseTheProgrammerBlazor.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
+        [EmailAddress]
+        [EmailValidator(allowEmailDomain:"tuseTheProgrammer.com", ErrorMessage ="Only tuseTheProgrammer.com email is allowed.")]
         public string Email { get; set; }
         public string PhotoPath { get; set; }
         public DateTime BirthDate { get; set; }
         public int DepartmentId { get; set; }
         public Gender Gender { get; set; }
-        public Department Department { get; set; }
+        [ValidateComplexType]
+        public Department Department { get; set; } 
     }
 }

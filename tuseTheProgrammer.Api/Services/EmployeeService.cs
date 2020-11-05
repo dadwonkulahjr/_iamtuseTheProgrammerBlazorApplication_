@@ -49,7 +49,8 @@ namespace tuseTheProgrammer.Api.Services
 
         public async Task<IEnumerable<Employee>> GetEmployees()
         {
-            return await _dbContext.Employees.ToListAsync();
+            return await _dbContext.Employees
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Employee>> Search(string name, Gender? gender)
@@ -61,7 +62,7 @@ namespace tuseTheProgrammer.Api.Services
                 query = query.Where(e => e.FirstName.Contains(name) || e.LastName.Contains(name));
             }
 
-            if(gender != null)
+            if (gender != null)
             {
                 query = query.Where(g => g.Gender == gender);
             }

@@ -4,14 +4,14 @@
     "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazorApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj": {
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammer.Component\\tuseTheProgrammer.Component.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj",
-        "projectName": "tuseTheProgrammerBlazor.Models",
-        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammer.Component\\tuseTheProgrammer.Component.csproj",
+        "projectName": "tuseTheProgrammer.Component",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammer.Component\\tuseTheProgrammer.Component.csproj",
         "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\obj\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammer.Component\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,11 +38,72 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj",
+        "projectName": "tuseTheProgrammerBlazor.Models",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj",
+        "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.DataAnnotations.Validation": {
+              "target": "Package",
+              "version": "[3.2.0-rc1.20223.4, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -59,6 +120,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
@@ -86,6 +152,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammer.Component\\tuseTheProgrammer.Component.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammer.Component\\tuseTheProgrammer.Component.csproj"
+              },
               "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj": {
                 "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj"
               }
@@ -108,6 +177,10 @@
             "Microsoft.AspNetCore.Blazor.HttpClient": {
               "target": "Package",
               "version": "[3.2.0-preview3.20168.3, )"
+            },
+            "Microsoft.AspNetCore.Components.DataAnnotations.Validation": {
+              "target": "Package",
+              "version": "[3.2.0-rc1.20223.4, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

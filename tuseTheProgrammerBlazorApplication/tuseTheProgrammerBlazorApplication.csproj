@@ -1,33 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\images\car.jpg" />
-    <None Include="wwwroot\images\david.png" />
-    <None Include="wwwroot\images\employees.png" />
-    <None Include="wwwroot\images\freya.png" />
-    <None Include="wwwroot\images\sara.png" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="wwwroot\images\car.jpg" />
+		<None Include="wwwroot\images\david.png" />
+		<None Include="wwwroot\images\employees.png" />
+		<None Include="wwwroot\images\freya.png" />
+		<None Include="wwwroot\images\sara.png" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.2.0-preview3.20168.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.2.0-preview3.20168.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.DataAnnotations.Validation" Version="3.2.0-rc1.20223.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\tuseTheProgrammerBlazor.Models\tuseTheProgrammerBlazor.Models.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\tuseTheProgrammer.Component\tuseTheProgrammer.Component.csproj" />
+		<ProjectReference Include="..\tuseTheProgrammerBlazor.Models\tuseTheProgrammerBlazor.Models.csproj" />
+	</ItemGroup>
 
 </Project>

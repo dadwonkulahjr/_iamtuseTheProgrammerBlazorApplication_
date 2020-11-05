@@ -1,11 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "pEuXc7dCVo5VtQ+wk472g4qRwqbFkJGMIofxjRh7+jvvuEbMysAId4sWIv/OjkIqFlPBB7b+CMG5eOU+A/BIlg==",
+  "dgSpecHash": "iwfdt4J2IRw4svojCLzX9/5Yw1jqbEmLYG1/itHP54xG4euhAirKyeYeTlT/guF25KR10JYKRdF4EmCy290hSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\tuseTheProgrammerBlazorApplication\\tuseTheProgrammerBlazor.Models\\tuseTheProgrammerBlazor.Models.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.3\\microsoft.aspnetcore.authorization.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.3\\microsoft.aspnetcore.components.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.3\\microsoft.aspnetcore.components.analyzers.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.components.dataannotations.validation\\3.2.0-rc1.20223.4\\microsoft.aspnetcore.components.dataannotations.validation.3.2.0-rc1.20223.4.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.3\\microsoft.aspnetcore.components.forms.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.3\\microsoft.aspnetcore.metadata.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.jsinterop\\3.1.3\\microsoft.jsinterop.3.1.3.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []

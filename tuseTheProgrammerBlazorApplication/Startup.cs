@@ -1,9 +1,11 @@
 using System;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using tuseTheProgrammerBlazorApplication.Profiles;
 using tuseTheProgrammerBlazorApplication.Services;
 
 namespace tuseTheProgrammerBlazorApplication
@@ -20,6 +22,7 @@ namespace tuseTheProgrammerBlazorApplication
         {
             services.AddRazorPages()
                     .AddRazorRuntimeCompilation();
+            services.AddAutoMapper(typeof(EmployeeProfile));
             services.AddServerSideBlazor();
             services.AddHttpClient<IEmployeeService, EmployeeService>(configureClient: client =>
              {
