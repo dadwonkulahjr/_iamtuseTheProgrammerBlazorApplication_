@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using tuseTheProgrammer.Component;
 using tuseTheProgrammerBlazor.Models;
 using tuseTheProgrammerBlazorApplication.Models;
 using tuseTheProgrammerBlazorApplication.Services;
@@ -21,6 +22,7 @@ namespace tuseTheProgrammerBlazorApplication.Pages
         public NavigationManager NavigationManager { get; set; }
         [Inject]
         public IMapper Mapper { get; set; }
+        protected DeleteConfirmation DeleteConfirmationComplete { get; set; }
         public List<Department> Departments { get; set; } = new List<Department>();
         public string PageTextHeader { get; set; }
         private Employee Employee { get; set; } = new Employee();
@@ -28,6 +30,7 @@ namespace tuseTheProgrammerBlazorApplication.Pages
         [Parameter]
         public string Id { get; set; }
         #endregion
+        #region Methods and Logic...
         protected async override Task OnInitializedAsync()
         {
             int.TryParse(Id, out int employeeId);
@@ -43,7 +46,7 @@ namespace tuseTheProgrammerBlazorApplication.Pages
                 {
                     BirthDate = DateTime.Now,
                     DepartmentId = 1,
-                    PhotoPath = "/images/Iam_Tuse_Eight.jpg"
+                    PhotoPath = "/images/employees.png"
                 };
 
 
@@ -77,5 +80,21 @@ namespace tuseTheProgrammerBlazorApplication.Pages
             await EmployeeService.DeleteEmployee(Employee.EmployeeId);
             NavigationManager.NavigateTo("/");
         }
+
+        protected void DeleteEmployee()
+        {
+            DeleteConfirmationComplete.Show();
+        }
+
+        protected async Task Delete_Click(bool confirmDelete)
+        {
+            if (confirmDelete)
+            {
+                await EmployeeService.DeleteEmployee(Employee.EmployeeId);
+                NavigationManager.NavigateTo("/");
+            }
+        }
+
     }
+    #endregion
 }

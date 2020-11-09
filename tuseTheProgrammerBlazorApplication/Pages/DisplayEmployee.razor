@@ -13,7 +13,8 @@
         <div class="card-footer text-center text-white">
             <a class="btn btn-primary mt-1" href="@($"employeeDetails/{Employee.EmployeeId}")">View</a>
             <a class="btn btn-primary mt-1" href="@($"editEmployee/{Employee.EmployeeId}")">Edit</a>
-            <a class="btn btn-danger mt-1">Delete</a>
+            <button type="button" class="btn btn-danger mt-1" @onclick="DeleteEmployee">Delete</button>
         </div>
     }
 </div>
+<DeleteConfirmation ConfirmationMessage=@($"Are you sure you want to delete employee {Employee.LastName + "," + Employee.FirstName}?") @ref="DeleteConfirmationComplete" ConfirmationChanged="Delete_Click"></DeleteConfirmation>

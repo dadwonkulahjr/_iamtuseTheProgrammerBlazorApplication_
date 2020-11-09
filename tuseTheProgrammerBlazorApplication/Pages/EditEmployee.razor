@@ -92,16 +92,6 @@
             </InputDate>
         </div>
     </div>
-    @*<div class="row form-group">
-            <label for="deptName" class="col-md-2 col-form-label">
-                Department Name
-            </label>
-            <div class="col-sm-10">
-                <InputText id="deptName" class="form-control" placeholder="Department Name..."
-                           @bind-Value="EditEmployeeModel.Department.DepartmentName" />
-                <ValidationMessage For="@(() => EditEmployeeModel.Department.DepartmentName)"></ValidationMessage>
-            </div>
-        </div>*@
     <div class="row form-group">
         <div class="col-sm-10">
             <button type="submit" class="btn btn-outline-success">
@@ -109,10 +99,11 @@
             </button>
             @if (EditEmployeeModel.EmployeeId > 0)
             {
-                <button type="button" class="btn btn-outline-danger" @onclick="HandleDeleteAction">
+                <button type="button" class="btn btn-outline-danger" @onclick="DeleteEmployee">
                     Delete
                 </button>
             }
         </div>
     </div>
 </EditForm>
+<DeleteConfirmation ConfirmationMessage=@($"Are you sure you want to delete employee {EditEmployeeModel.LastName + "," + EditEmployeeModel.FirstName}?") @ref="DeleteConfirmationComplete" ConfirmationChanged="Delete_Click"></DeleteConfirmation>

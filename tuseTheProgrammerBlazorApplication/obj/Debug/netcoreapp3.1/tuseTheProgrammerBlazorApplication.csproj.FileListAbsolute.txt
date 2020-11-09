@@ -404,3 +404,13 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuse
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Parent.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\Pages\Parent.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Child.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\Pages\Child.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ParentComponent.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\Pages\ParentComponent.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ChildComponent.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\GrandChildComponent.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\Pages\ChildComponent.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammerBlazorApplication\obj\Debug\netcoreapp3.1\Razor\Pages\GrandChildComponent.razor.g.cs

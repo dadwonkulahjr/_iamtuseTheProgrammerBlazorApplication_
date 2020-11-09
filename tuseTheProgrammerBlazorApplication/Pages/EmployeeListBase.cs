@@ -20,6 +20,10 @@ namespace tuseTheProgrammerBlazorApplication.Pages
         {
             Employees = await EmployeeService.GetEmployees();
         }
+        protected async Task OnEmployeeDeleted()
+        {
+            Employees = (await EmployeeService.GetEmployees()).ToList();
+        }
         protected void EmployeeSelectionChanged(bool isSelected)
         {
             if (isSelected)

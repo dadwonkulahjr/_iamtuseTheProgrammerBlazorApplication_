@@ -1,0 +1,24 @@
+﻿<input id="name" class="form-control" placeholder="Default PlaceHolder" @attributes="InputAttribute"  value="@Value" />
+
+@code {
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> InputAttribute { get; set; }
+    = new Dictionary<string, object>()
+    {
+        {"required","required" },
+        {"placeholder", "I am from the child component" },
+        {"maxsize", "5" },
+        {"size", "10" }
+    };
+    [Parameter]
+    public string Value { get; set; } = "Child Value";
+    //[Parameter]
+    //public string PlaceHolder { get; set; } = "I am the Child Component";
+    //[Parameter]
+    //public string Required { get; set; } = "required";
+    //[Parameter]
+    //public string MaxLength { get; set; } = "5";
+    //[Parameter]
+    //public string Size { get; set; } = "4";
+}

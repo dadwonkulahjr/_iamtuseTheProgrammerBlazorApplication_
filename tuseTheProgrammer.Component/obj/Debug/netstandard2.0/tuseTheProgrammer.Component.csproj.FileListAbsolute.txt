@@ -19,3 +19,5 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuse
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammer.Component\obj\Debug\netstandard2.0\staticwebassets\tuseTheProgrammer.Component.StaticWebAssets.xml
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammer.Component\obj\Debug\netstandard2.0\tuseTheProgrammer.Component.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammer.Component\obj\Debug\netstandard2.0\tuseTheProgrammer.Component.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammer.Component\obj\Debug\netstandard2.0\RazorDeclaration\DeleteConfirmation.razor.g.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammer.Component\obj\Debug\netstandard2.0\Razor\DeleteConfirmation.razor.g.cs

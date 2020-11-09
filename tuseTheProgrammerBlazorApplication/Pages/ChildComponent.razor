@@ -1,0 +1,10 @@
+﻿<h1 style="@CustomStyle">Child Component</h1>
+
+<GrandChildComponent>
+
+</GrandChildComponent>
+
+@code {
+    [CascadingParameter]
+    public string CustomStyle { get; set; }
+}
