@@ -1,10 +1,23 @@
-﻿<h1 style="@CustomStyle">Child Component</h1>
+﻿<h1 style="@CustomStyle;@CustomBorderStyle">Child Component - @Counter</h1>
+<div>
+    The name of the developer is @Name<br />
+    And he is @Age years old!
+</div>
 
 <GrandChildComponent>
 
 </GrandChildComponent>
 
 @code {
-    [CascadingParameter]
+    [CascadingParameter(Name = "CustomStyle")]
     public string CustomStyle { get; set; }
+    [CascadingParameter(Name = "CustomName")]
+    public string Name { get; set; }
+    [CascadingParameter(Name = "CustomAge")]
+    public int Age { get; set; }
+    [CascadingParameter(Name = "BorderStyle")]
+    public string CustomBorderStyle { get; set; }
+    [CascadingParameter(Name = "CounterName")]
+    public int Counter { get; set; }
+
 }

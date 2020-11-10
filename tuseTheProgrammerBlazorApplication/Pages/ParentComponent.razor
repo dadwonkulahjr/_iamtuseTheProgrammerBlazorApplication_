@@ -1,13 +1,33 @@
 ﻿@page "/parent"
 
-<h1 style="@Style">Parent Component</h1>
-<CascadingValue Value="Style">
-<ChildComponent>
-</ChildComponent>
+<button type="button" class="btn btn-warning" @onclick="IncreamentCounterVariable">
+    Increament Counter
+</button>
+<h1 style="@Style">Parent Component - @Counter</h1>
+<CascadingValue Value="Style" Name="CustomStyle"  IsFixed="true">
+    <CascadingValue Value="DeveloperAge" Name="CustomAge">
+        <CascadingValue Value="DeveloperName" Name="CustomName">
+            <CascadingValue Value="Border" Name="BorderStyle" IsFixed="true">
+                <CascadingValue Value="Counter" Name="CounterName" IsFixed="false">
+                    <ChildComponent>
+                    </ChildComponent>
+                </CascadingValue>
+            </CascadingValue>
+        </CascadingValue>
+    </CascadingValue>
 </CascadingValue>
 
 @code {
 
     public string Style { get; set; } = "color:red";
+    public int DeveloperAge { get; set; } = 24;
+    public string DeveloperName { get; set; } = "tuseTheProgrammer";
+    public string Border { get; set; } = "border:5px solid blue";
+    public int Counter { get; set; } = 0;
+
+    private void IncreamentCounterVariable()
+    {
+        Counter = Counter + 1;
+    }
 
 }

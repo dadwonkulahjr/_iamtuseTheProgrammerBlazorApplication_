@@ -1,3 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/Identity" Path="C:\Users\Dad S. Wonkulah Jr\.nuget\packages\microsoft.aspnetcore.identity.ui\3.1.9\staticwebassets\V4\" />
   <ContentRoot BasePath="_content/tuseTheProgrammer.Component" Path="C:\Users\Dad S. Wonkulah Jr\source\repos\tuseTheProgrammerBlazorApplication\tuseTheProgrammer.Component\wwwroot\" />
 </StaticWebAssets>

@@ -1,7 +1,9 @@
 ﻿
-<h1 style="@CustomStyle">Grand Child Component</h1>
+<h1 style="@CustomStyle">Grand Child Component - @CustomCounter</h1>
 
 @code {
-    [CascadingParameter]
+    [CascadingParameter(Name = "CustomStyle")]
     public string CustomStyle { get; set; }
+    [CascadingParameter(Name = "CounterName")]
+    public int CustomCounter { get; set; }
 }
